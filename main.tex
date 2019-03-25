@@ -1,0 +1,46 @@
+\documentclass[12pt]{beamer}
+
+% language specific settings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+
+% packages
+\usepackage{graphicx}
+\usepackage{url}
+
+% images path
+\graphicspath{{images}{../images}}
+
+\mode<presentation>
+{
+  \usetheme{default}
+  \usecolortheme{dolphin}
+  \usefonttheme{serif} 
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\title[]{Object detection through TensorFlow}
+\author{Caglar Özel}
+\institute{HTW Berlin}
+\date{28.03.2019}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{Introduction}
+\input{sections/introduction.tex}
+
+\section{TensorFlow}
+\input{sections/tensorflow.tex}
+
+\section{Application}
+\input{sections/application.tex}
+\end{document}
