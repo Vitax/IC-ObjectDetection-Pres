@@ -7,23 +7,25 @@
 % packages
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{booktabs}
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{plainnat}
 
 % images path
 \graphicspath{{images}{../images}}
 
 \mode<presentation>
 {
-  \usetheme{default}
-  \usecolortheme{dolphin}
-  \usefonttheme{serif} 
-  \setbeamertemplate{navigation symbols}{}
-  \setbeamertemplate{caption}[numbered]
+    \usetheme[progressbar=frametitle]{metropolis}
+    \usefonttheme{serif} 
+    \setbeamertemplate{navigation symbols}{}
+    \setbeamertemplate{caption}[numbered]
 } 
 
-\title[]{Object detection through TensorFlow}
+\title{Object detection with TensorFlow}
+\date{03/28/2019}
 \author{Caglar Özel}
 \institute{HTW Berlin}
-\date{28.03.2019}
 
 \begin{document}
 
@@ -31,7 +33,7 @@
     \titlepage
 \end{frame}
 
-\begin{frame}{Content}
+\begin{frame}{Table of Content}
     \tableofcontents
 \end{frame}
 
@@ -43,4 +45,8 @@
 
 \section{Application}
 \input{sections/application.tex}
+
+\begin{frame}{Resources}
+    \bibliography{resources}
+\end{frame}
 \end{document}

@@ -1,11 +1,32 @@
 \begin{frame}{TensorFlow}
-
-\end{frame}
-
-\begin{frame}{Data model of TensorFlow}
     \begin{itemize}
-        \item Training results per session stored in Checkpoints
-        \item Results can be consulted on Tensorboard
+        \item Open source Machine Learning platform  by Google
+        \item Easy model building
+        \item Robust ML production anywhere
+        \item Powerful for prototyping
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Requirement for TensorFlow training}
+    \begin{itemize}
+        \item Image set
+        \item Ground truth data
+        \item CSV containing the ground truth information 
+        \item Generated ''.record'' files out of the csv
+        \item Configuration file for training
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Model of TensorFlow}
+    \begin{itemize}
+        \item Training results stored in Checkpoints
+            \begin{itemize}
+                \item Free choice of state usage
+                \item Results can be consulted on TensorBoard
+                    \begin{itemize}
+                        \item Results for each checkpoint
+                        \item Sample image detections
+                    \end{itemize}
+            \end{itemize}
+    \end{itemize}
+\end{frame}
